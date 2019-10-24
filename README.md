@@ -10,3 +10,7 @@
 •  Microservices 
 
 •  Exporting data from mongodb-exporter to prometheus to grafana
+
+
+
+* . kubectl delete namespace monitoring
