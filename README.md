@@ -13,4 +13,4 @@
 
 
 
-* . kubectl delete namespace monitoring
+• kubectl delete namespace monitoring
