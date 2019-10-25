@@ -13,7 +13,7 @@
 
 • kubectl delete namespace monitoring
 
-
+Links to Helm charts for implementing 
 Time- series database blog https://blog.timescale.com/blog/what-the-heck-is-time-series-data-and-why-do-i-need-a-time-series-database-dcf3b1b18563/
 
 Node-exporter helm chart
