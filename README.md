@@ -43,6 +43,7 @@ The RED method is a subset of “The Four Golden Signals” that’s focused on 
 * Error: the number of failed requests per second;
 * Duration: the amount of time it takes to process a request;
 Measuring these metrics is pretty straightforward, especially with tools like Prometheus, and using the same metrics for every service helps us create a standard and easy-to-read format for dashboards that have to show the results.
+
 Using the same metrics for every service and treating them the same way, from a monitoring perspective, helps the scalability in the operations teams, reduces the amount of service-specific training the team needs, and reduces the service-specific special cases the on-call-engineers need to remember for those high-pressure incident response scenarios — what is referred to as “cognitive load.”
 ### Infrastructure and the USE method
 The USE Method is more focused on infrastructure monitoring where you have the keep the physical resources under control and is based on just three parameters:
