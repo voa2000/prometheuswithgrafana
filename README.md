@@ -39,14 +39,14 @@ The Four Golden Signals are a series of metrics defined by Google Site Reliabili
 We don’t use exactly those 4 metrics but we choose to work with two different methods using a subset of metrics generated from these four, depending on what we are monitoring: for HTTP Metrics we use the RED Method while we use the USE Method for Infrastructure.
 ### From the Four Golden signals to the RED way of creating Metrics
 The RED method is a subset of “The Four Golden Signals” that’s focused on micro-service architectures and which includes these metrics:
-Rate: the number of requests our service is serving per second;
-Error: the number of failed requests per second;
-Duration: the amount of time it takes to process a request;
+* Rate: the number of requests our service is serving per second;
+* Error: the number of failed requests per second;
+* Duration: the amount of time it takes to process a request;
 Measuring these metrics is pretty straightforward, especially with tools like Prometheus, and using the same metrics for every service helps us create a standard and easy-to-read format for dashboards that have to show the results.
 Using the same metrics for every service and treating them the same way, from a monitoring perspective, helps the scalability in the operations teams, reduces the amount of service-specific training the team needs, and reduces the service-specific special cases the on-call-engineers need to remember for those high-pressure incident response scenarios — what is referred to as “cognitive load.”
-Infrastructure and the USE method
+### Infrastructure and the USE method
 The USE Method is more focused on infrastructure monitoring where you have the keep the physical resources under control and is based on just three parameters:
-Utilization: the proportion of the resource that is used, so 100% utilization means no more work can be accepted;
-Saturation: the degree to which the resource has extra work which it can’t service, often queued;
-Errors: the count of error events;
+* Utilization: the proportion of the resource that is used, so 100% utilization means no more work can be accepted;
+* Saturation: the degree to which the resource has extra work which it can’t service, often queued;
+* Errors: the count of error events;
 While this method at start helped us identify which specific metrics to use for each resource (CPU, Memory, Discs, …), our next task was to interpret their values, and it’s not always so obvious.
