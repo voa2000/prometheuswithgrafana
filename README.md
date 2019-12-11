@@ -17,6 +17,7 @@
 • Time- series database blog 
 https://blog.timescale.com/blog/what-the-heck-is-time-series-data-and-why-do-i-need-a-time-series-database-dcf3b1b18563/
 • Node-exporter helm chart
+
 https://github.com/helm/charts/tree/master/stable/prometheus-node-exporter
 • MongoDB-exporter helm chart
 https://github.com/helm/charts/tree/master/stable/prometheus-mongodb-exporter
@@ -36,6 +37,7 @@ The Four Golden Signals are a series of metrics defined by Google Site Reliabili
 * Errors : The rate of requests that fails;
 * Saturation : How “full” our service is, basically how close we are to exhausting system resources;
 We don’t use exactly those 4 metrics but we choose to work with two different methods using a subset of metrics generated from these four, depending on what we are monitoring: for HTTP Metrics we use the RED Method while we use the USE Method for Infrastructure.
+
 ### From the Four Golden signals to the RED way of creating Metrics
 The RED method is a subset of “The Four Golden Signals” that’s focused on micro-service architectures and which includes these metrics:
 * Rate: the number of requests our service is serving per second;
