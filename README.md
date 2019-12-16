@@ -3,7 +3,7 @@
 
 •  This is to be used to monitor to processors of nodejs in all the microservices running on a cluster.
 
-•  NodeJS to be monitored
+•  NodeJS clusters are to be monitored
 
 •  Using functions
 
